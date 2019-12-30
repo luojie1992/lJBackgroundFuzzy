@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "LJBackgroundFuzzyManage.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[LJBackgroundFuzzyManage sharedBackgroundFuzzyManage] start];
+
     return YES;
 }
 

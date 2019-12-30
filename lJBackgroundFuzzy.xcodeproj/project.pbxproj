@@ -16,6 +16,8 @@
 		1425958223B9882B009CA926 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1425958123B9882B009CA926 /* main.m */; };
 		1425958C23B9882B009CA926 /* lJBackgroundFuzzyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1425958B23B9882B009CA926 /* lJBackgroundFuzzyTests.m */; };
 		1425959723B9882B009CA926 /* lJBackgroundFuzzyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1425959623B9882B009CA926 /* lJBackgroundFuzzyUITests.m */; };
+		142595A723B98874009CA926 /* LJBackgroundFuzzyManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 142595A623B98874009CA926 /* LJBackgroundFuzzyManage.m */; };
+		142595AA23B988B4009CA926 /* WindowAboveBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 142595A923B988B4009CA926 /* WindowAboveBackgroundView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		1425959223B9882B009CA926 /* lJBackgroundFuzzyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lJBackgroundFuzzyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1425959623B9882B009CA926 /* lJBackgroundFuzzyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lJBackgroundFuzzyUITests.m; sourceTree = "<group>"; };
 		1425959823B9882B009CA926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		142595A523B98874009CA926 /* LJBackgroundFuzzyManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJBackgroundFuzzyManage.h; sourceTree = "<group>"; };
+		142595A623B98874009CA926 /* LJBackgroundFuzzyManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJBackgroundFuzzyManage.m; sourceTree = "<group>"; };
+		142595A823B988B4009CA926 /* WindowAboveBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowAboveBackgroundView.h; sourceTree = "<group>"; };
+		142595A923B988B4009CA926 /* WindowAboveBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowAboveBackgroundView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 		1425956E23B98829009CA926 /* lJBackgroundFuzzy */ = {
 			isa = PBXGroup;
 			children = (
+				142595A423B98843009CA926 /* manager */,
 				1425956F23B98829009CA926 /* AppDelegate.h */,
 				1425957023B98829009CA926 /* AppDelegate.m */,
 				1425957223B98829009CA926 /* SceneDelegate.h */,
@@ -135,6 +142,17 @@
 				1425959823B9882B009CA926 /* Info.plist */,
 			);
 			path = lJBackgroundFuzzyUITests;
+			sourceTree = "<group>";
+		};
+		142595A423B98843009CA926 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				142595A523B98874009CA926 /* LJBackgroundFuzzyManage.h */,
+				142595A623B98874009CA926 /* LJBackgroundFuzzyManage.m */,
+				142595A823B988B4009CA926 /* WindowAboveBackgroundView.h */,
+				142595A923B988B4009CA926 /* WindowAboveBackgroundView.m */,
+			);
+			path = manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +289,8 @@
 				1425957123B98829009CA926 /* AppDelegate.m in Sources */,
 				1425958223B9882B009CA926 /* main.m in Sources */,
 				1425957423B98829009CA926 /* SceneDelegate.m in Sources */,
+				142595AA23B988B4009CA926 /* WindowAboveBackgroundView.m in Sources */,
+				142595A723B98874009CA926 /* LJBackgroundFuzzyManage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,12 +460,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8JUM5GWZJ;
 				INFOPLIST_FILE = lJBackgroundFuzzy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-23.lJBackgroundFuzzy";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dgzq.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -456,12 +478,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8JUM5GWZJ;
 				INFOPLIST_FILE = lJBackgroundFuzzy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-23.lJBackgroundFuzzy";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dgzq.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
